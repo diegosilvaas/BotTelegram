@@ -1,0 +1,21 @@
+Pedido: 2
+Endereço de entrega: rua vitorino monteiro 245
+Pedido: 
+Pedido: 2
+Endereço de entrega: ruaaaa
+Pedido: 1
+Endereço de entrega: rua Vitorino Monteiro
+Pedido: 
+Pedido: 
+Pedido: 2
+Endereço de entrega: Vitorino Monteiro
+Pedido: 
+Pedido: 1
+Endereço de entrega: 
+Pedido: 1
+Pedido: 1
+Pedido: 1
+Pedido: 2
+Pedido: 1
+Pedido: 1
+Endereço de entrega: varzea grande

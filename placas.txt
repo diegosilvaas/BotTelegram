@@ -1,0 +1,5 @@
+Placa: ovc6262
+Placa: obc4567
+Placa: obc3b03
+Placa: OBC-3B03
+Placa: obertooo
