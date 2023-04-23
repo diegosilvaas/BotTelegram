@@ -19,3 +19,15 @@ Pedido: 2
 Pedido: 1
 Pedido: 1
 Endereço de entrega: varzea grande
+Pedido: 2
+Pedido: 2
+Pedido: 2
+Pedido: 2
+Pedido: 2
+Pedido: 2
+Pedido: 2
+Pedido: 2
+Pedido: 3
+Pedido: 2
+Pedido: 2
+Endereço de entrega: cuiaba
