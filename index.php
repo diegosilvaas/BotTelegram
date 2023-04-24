@@ -13,9 +13,9 @@ $webHookUrl = getenv('webhookUrl');
 $telegram = new Client($botToken);
 $telegram->setWebhook($webHookUrl);
 
-$cardapio = "Nosso cardápio:\n\n [ 1 ] Burguer caseiro: R$ 30\n [ 2 ] X Salada: R$ 20\n [ 3 ] X Frango: R$ 25\n [ 4 ] X Calabresa: R$ 28\n\nDigite /pedido seguido do número da pizza desejada.";
-//linha adicionada
-$bebida = "Nossas bebida:\n\n [ 1 ] Coca 2 lts: R$ 15\n [ 2 ] Coca 1,5 lts: R$ 10\n [ 3 ] Coca 500 ml: R$ 8\n [ 4 ] Coca lata: R$ 5\n\nDigite /bebida seguido do número da bebida desejada.";
+$cardapio = "Nosso cardápio:\n\n [ 1 ] Burguer caseiro: R$ 30\n [ 2 ] X Salada: R$ 20\n [ 3 ] X Frango: R$ 25\n [ 4 ] X Calabresa: R$ 28\n\nDigite /pedido seguido do número do lanche desajado desejada.";
+
+$bebida = "Nossas bebidas:\n\n [ 1 ] Coca 2 lts: R$ 15\n [ 2 ] Coca 1,5 lts: R$ 10\n [ 3 ] Coca 500 ml: R$ 8\n [ 4 ] Coca lata: R$ 5\n [ 5 ] Nenhuma bebida\n\nDigite /bebidas seguido do número da bebida desejada.";
 
 $telegram->command('start', function ($message) use ($telegram, $cardapio) {
     $telegram->sendMessage($message->getChat()->getId(), 'Bem-vindo ao bot de atendimento de pedidos! Para ver o nosso cardápio, digite /cardapio.');
@@ -26,7 +26,7 @@ $telegram->command('cardapio', function ($message) use ($telegram, $cardapio) {
     $telegram->sendMessage($message->getChat()->getId(), $cardapio);
 });
 
-// linha adicionada
+
 $telegram->command('bebida', function ($message) use ($telegram, $bebida) {
     $telegram->sendMessage($message->getChat()->getId(), $bebida);
 });
@@ -44,19 +44,22 @@ $telegram->on(function ($update) use ($telegram) {
         $bebida = substr($text, 9);
         switch ($bebida) {
             case '1':
-                $telegram->sendMessage($chatId, 'Você escolheu coca 2 lts. Digite /endereco para indormar seu endereco.');
+                $telegram->sendMessage($chatId, 'Você escolheu coca 2 lts. Digite /endereco para informar seu endereco.');
                 break;
             case '2':
-                $telegram->sendMessage($chatId, 'Você escolheu coca 2 lts. Digite /endereco para indormar seu endereco.');
+                $telegram->sendMessage($chatId, 'Você escolheu coca 2 lts. Digite /endereco para informar seu endereco.');
                 break;
             case '3':
-                $telegram->sendMessage($chatId, 'Você escolheu coca 2 lts. Digite /endereco para indormar seu endereco.');
+                $telegram->sendMessage($chatId, 'Você escolheu coca 2 lts. Digite /endereco para informar seu endereco.');
                 break;
             case '4':
-                $telegram->sendMessage($chatId, 'Você escolheu coca 2 lts. Digite /endereco para indormar seu endereco.');
+                $telegram->sendMessage($chatId, 'Você escolheu coca 2 lts. Digite /endereco para informar seu endereco.');
+                break;
+             case '5':
+                $telegram->sendMessage($chatId, 'Você não escolheu nenhuma bebida. Digite /endereco para informar seu endereco.');
                 break;
             default:
-                $telegram->sendMessage($chatId, 'Opção inválida. Por favor, digite /bebida seguido do número da bebida desejada.');
+                $telegram->sendMessage($chatId, 'Opção inválida. Por favor, digite /bebidas seguido do número da bebida desejada.');
                 break;
         }
         
@@ -68,19 +71,19 @@ $telegram->on(function ($update) use ($telegram) {
 
         switch ($pedido) {
             case '1':
-                $telegram->sendMessage($chatId, 'Você escolheu o Burguer caseiro. Digite /bebida para informar sua bebida.');
+                $telegram->sendMessage($chatId, 'Você escolheu o Burguer caseiro. Digite /bebida para escolher sua bebida.');
                 break;
             case '2':
-                $telegram->sendMessage($chatId, 'Você escolheu o X Salada.Digite /bebida para informar sua bebida.');
+                $telegram->sendMessage($chatId, 'Você escolheu o X Salada. Digite /bebida para escolher sua bebida.');
                 break;
             case '3':
-                $telegram->sendMessage($chatId, 'Digite /bebida para informar sua bebida.');
+                $telegram->sendMessage($chatId, 'Você escolheu X Frango. Digite /bebida para escolher sua bebida.');
                 break;
             case '4':
-                $telegram->sendMessage($chatId, 'Digite /bebida para informar sua bebida.');
+                $telegram->sendMessage($chatId, 'Você escolheu o X Calabresa. Digite /bebida para escolher sua bebida.');
                 break;
             default:
-                $telegram->sendMessage($chatId, 'Opção inválida. Por favor, digite /pedido seguido do número da pizza desejada.');
+                $telegram->sendMessage($chatId, 'Opção inválida. Por favor, digite /pedido seguido do número do lanche desejado.');
                 break;
         }
 
