@@ -76,11 +76,11 @@ Digite /endereco e em seguida seu endereco de entrega.');
 
         switch ($pedido) {
             case '1':
-                $telegram->sendMessage($chatId, 'Você escolheu o Burguer caseiro.
+                $telegram->sendMessage($chatId, 'Você escolheu Burguer caseiro.
 Digite /bebida para escolher sua bebida.');
                 break;
             case '2':
-                $telegram->sendMessage($chatId, 'Você escolheu o X Salada.
+                $telegram->sendMessage($chatId, 'Você escolheu X Salada.
 Digite /bebida para escolher sua bebida.');
                 break;
             case '3':
@@ -88,7 +88,7 @@ Digite /bebida para escolher sua bebida.');
 Digite /bebida para escolher sua bebida.');
                 break;
             case '4':
-                $telegram->sendMessage($chatId, 'Você escolheu o X Calabresa.
+                $telegram->sendMessage($chatId, 'Você escolheu X Calabresa.
 Digite /bebida para escolher sua bebida.');
                 break;
             default:
