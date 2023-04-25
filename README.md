@@ -14,3 +14,12 @@ Este projeto foi criado com o intuito de facilitar a interação entre usuários
 Para desenvolver este projeto, utilizei a linguagem PHP em conjunto com o Composer, que é um gerenciador de dependências de código. Além disso, utilizei o Ngrok para expor o bot para a internet, permitindo que ele possa ser acessado de qualquer lugar do mundo.
 
 O bot é capaz de receber comandos e mensagens de usuários, processar essas informações e realizar consultas na API. As respostas são retornadas para o usuário de forma clara e objetiva, permitindo que ele possa interagir com a API de forma simples e intuitiva.
+
+  
+
+## 🔨 Funcionalidades do projeto
+https://user-images.githubusercontent.com/122392637/234390269-04caea6d-6e19-48a6-8db0-334603e0fbfa.mp4
+
+
+
+
