@@ -31,3 +31,38 @@ Pedido: 3
 Pedido: 2
 Pedido: 2
 Endereço de entrega: cuiaba
+Pedido: 2
+Endereço de entrega: varzea grande
+Pedido: 1
+Endereço de entrega: altonia
+Pedido: 1
+Endereço de entrega: maringa
+Pedido: 
+Pedido: 2]
+Pedido: 2
+Endereço de entrega: 
+Pedido: 2
+Endereço de entrega: maringa
+Pedido: 1
+Endereço de entrega: rua das pombas 1011, Jardim dos pássaros
+Pedido: 2
+Endereço de entrega: avenida Brasil- centro
+Pedido: 2
+Pedido: 3
+Pedido: 3
+Pedido: 3
+Pedido: 3
+Pedido: 2
+Endereço de entrega: ponte nova
+Pedido: 
+Pedido: 2
+Endereço de entrega: 
+Pedido: 3
+Endereço de entrega: cuiaba - Brasil
+Pedido: 4
+Endereço de entrega: Cuiabá - Mato Grosso
+Pedido: 3
+Pedido: 2
+Endereço de entrega: Cuiaba - MT
+Pedido: 2
+Endereço de entrega: Cuiaba - Mato Grosso
